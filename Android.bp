@@ -17753,7 +17753,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libbase",
                 "libbinder_ndk",
-                "vendor.qti.hardware.qxr-V1-ndk",
+                "vendor.qti.hardware.qxr-V1-ndk_vendor",
                 "libdrm",
                 "libui",
                 "android.hardware.thermal@1.0",
@@ -22778,7 +22778,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qxr-V1-ndk",
+    name: "vendor.qti.hardware.qxr-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.qxr-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -30432,7 +30433,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/sxrservice",
             ],
             shared_libs: [
-                "vendor.qti.hardware.qxr-V1-ndk",
+                "vendor.qti.hardware.qxr-V1-ndk_vendor",
                 "libbinder_ndk",
                 "libbase",
                 "liblog",
