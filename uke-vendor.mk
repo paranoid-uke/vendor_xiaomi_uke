@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/uke
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/uke/proprietary/odm/etc/Keyboard_Upgrade_0x01.bin:$(TARGET_COPY_OUT_ODM)/etc/Keyboard_Upgrade_0x01.bin \
-    vendor/xiaomi/uke/proprietary/odm/etc/Keyboard_Upgrade_0x10.bin:$(TARGET_COPY_OUT_ODM)/etc/Keyboard_Upgrade_0x10.bin \
-    vendor/xiaomi/uke/proprietary/odm/etc/Keyboard_Upgrade_0x61.bin:$(TARGET_COPY_OUT_ODM)/etc/Keyboard_Upgrade_0x61.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/TouchPad_Upgrade_0x04.bin:$(TARGET_COPY_OUT_ODM)/etc/TouchPad_Upgrade_0x04.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Forte/Forte_acdb_cal.acdb \
     vendor/xiaomi/uke/proprietary/odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp \
@@ -761,7 +758,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/odm/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b20 \
     vendor/xiaomi/uke/proprietary/odm/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.mbn \
     vendor/xiaomi/uke/proprietary/odm/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.mdt \
-    vendor/xiaomi/uke/proprietary/odm/firmware/MCU_Upgrade.bin:$(TARGET_COPY_OUT_ODM)/firmware/MCU_Upgrade.bin \
     vendor/xiaomi/uke/proprietary/odm/firmware/evass-lt.b00:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.b00 \
     vendor/xiaomi/uke/proprietary/odm/firmware/evass-lt.b01:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.b01 \
     vendor/xiaomi/uke/proprietary/odm/firmware/evass-lt.b02:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.b02 \
@@ -837,12 +833,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/uke/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/xiaomi/uke/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
-    vendor/xiaomi/uke/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/uke/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/uke/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
-    vendor/xiaomi/uke/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/xiaomi/uke/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
-    vendor/xiaomi/uke/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/xiaomi/uke/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
     vendor/xiaomi/uke/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd \
@@ -924,7 +917,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/model_front_mibokeh_video.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_front_mibokeh_video.dlc \
     vendor/xiaomi/uke/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/charger_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/charger_diag.cfg \
-    vendor/xiaomi/uke/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/xiaomi/uke/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/xiaomi/uke/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -2047,7 +2039,6 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libubwcp \
     libultrasound_notify \
-    libutils_vendor \
     libvega_common \
     libvideoBokeh \
     libvideodiedobserver_vendor \
@@ -2175,7 +2166,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.factory-V1-ndk \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
@@ -2214,7 +2204,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
-    vendor.qti.hardware.wigig.netperftuner@1.0 \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
@@ -2293,31 +2282,10 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
     libqcc \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
-    libwfdavenhancements \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdmmsrc_system \
-    libwfdnative \
-    libwfdrtsp \
-    libwfdservice \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
@@ -2326,8 +2294,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
@@ -2485,9 +2451,7 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     com.qualcomm.qti.gpudrivers.pineapple.api34 \
-    WfdService \
     dpmserviceapp \
-    WfdCommon \
     com.qti.dpmframework \
     dpmapi \
     android.hardware.drm-service.xml \
@@ -2558,7 +2522,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.factory-service \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
@@ -2659,7 +2622,6 @@ PRODUCT_PACKAGES += \
     dpmd \
     qccsyshal_aidl-service \
     tcmd \
-    wfdservice64 \
     vendor.xiaomi.hardware.mediaeventgatherservice-service \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
@@ -2668,11 +2630,7 @@ PRODUCT_PACKAGES += \
     toucheventcheck
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so \
     vendor_lib64_soundfx_libmisoundfx_so
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
