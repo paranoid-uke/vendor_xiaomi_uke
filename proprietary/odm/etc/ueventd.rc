@@ -78,3 +78,6 @@ subsystem mi_display
 
 #launch boost
 /dev/iorap_dev 0660 system system
+
+# USB PD authentication: match OEM data_role ownership for batterysecret.
+/sys/class/typec/port0    data_role    0660    system    system
